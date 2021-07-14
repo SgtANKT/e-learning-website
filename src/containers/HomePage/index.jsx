@@ -11,6 +11,7 @@ import { Marginer } from '../../components/marginer'
 import { Tasks } from '../../components/tasks'
 import { Offerings } from '../../components/offerings'
 import { Details } from '../../components/details'
+import { Footer } from '../../components/footer'
 
 
 
@@ -47,7 +48,8 @@ export function HomePage(props) {
                 </ContentContainer>
                 <Marginer direction='vertical' margin='5px'></Marginer>
                 <Contact></Contact>
-            </InnerPageContainer>        
+            </InnerPageContainer>   
+                <Footer/>
         </PageContainer>
     )
 }

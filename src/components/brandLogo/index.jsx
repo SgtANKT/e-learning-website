@@ -21,20 +21,20 @@ const LogoImage = styled.div`
 const LogoTitle = styled.h2`
     margin: 0;
     font-size: ${({ size }) => size ? size + 'px' : '20px'};
-    color: #ffff;
-    font-weight: 600;
+    color: ${({ color }) => (color? color : '#fff')};
+    font-weight: 800;
     margin-left: 6px;
 `;
 
 export function BrandLogo(props) {
-    const { logoSize, textSize } = props;
+    const { logoSize, textSize, color, hideLogo } = props;
     return (
         <BrandLogoContainer>
-            <LogoImage size={logoSize}>
+            {!hideLogo && <LogoImage size={logoSize}>
                 <img src={LogoImg} alt='Elearning'/>
-            </LogoImage>
+            </LogoImage>}
             <Marginer direction='horizontal' margin={5}/>
-            <LogoTitle size={textSize}>E-LEARNING</LogoTitle>
+            <LogoTitle size={textSize} color={color}>E-LEARNING</LogoTitle>
         </BrandLogoContainer>
     )
 }
