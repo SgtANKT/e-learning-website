@@ -1,0 +1,24 @@
+{
+    "services": [{
+            "id":1, "title": "Data Science and The world around it", 
+            "thumbnailUrl": "http://localhost:9000/ds.jpg", 
+            "rating":4.8,"reviews":99112 , "provider":{"id":1, "name": "MIT"}
+        },
+        {
+            "id":2, "title": "Modern Data Science", 
+            "thumbnailUrl": "http://localhost:9000/ds1.png", 
+            "rating":4.9, "reviews":10099 ,"provider":{"id":2, "name": "Georgia Tech"}},
+        
+        {
+            "id":3, "title": "Data Science BootCamp", 
+            "thumbnailUrl": "http://localhost:9000/ds2.png", 
+            "rating":4.5, "reviews":22212, "provider":{"id":3, "name": "NYU"}
+        },
+        
+        {
+            "id":4, "title": "Data Science and The world around it", 
+                "thumbnailUrl": "http://localhost:9000/ds3.jpg", 
+                "rating":4.8, "reviews":22190, "provider":{"id":1, "name": "MIT"}
+        }
+    ]
+}
